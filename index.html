@@ -3,44 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe shop</title>
-    <link rel="stylesheet" href="./css/stile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Coffee Shop - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/stile.css">
 </head>
-<body>
+<body class="home-page">
+    <nav class="nav">
+        <div class="logo">☕ Coffe</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contactenos</a>
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </nav>
 
-    <header>
-        <nav>
-            <div class="logo">☕ Coffe</div>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/menu.html">Menu</a></li>
-                <li><a href="/galeria.html">Galeria</a></li>
-                <li><a href="/contacto.html">Contactenos</a></li>
-                <li><a href="/carrito.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li><a href="/login.html"><i class="fa-regular fa-circle-user"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="hero">
-        <div class="content">
-            <h1 class="cursive-title">El mejor café</h1>
-            <p class="subtitle">Haz tu día genial con nuestro especial Coffe</p>
-            <p class="description">
-                Bienvenido al paraíso del café donde cada grano cuenta <br>
-                una historia y cada taza despierta una alegría.
-            </p>
-            <div class="buttons">
-                <a href="#" class="btn btn-primary">Ordenar ahora</a>
-                <a href="#" class="btn btn-secondary">Contactenos</a>
+    <section class="hero">
+        <div class="hero-left">
+            <h1 class="cursive-title">El mejor cafe</h1>
+            <h3 class="subtitle">Haz tu dia genial con nuestro especial Coffe</h3>
+            <p class="description">Bienvenido al paraiso del cafe donde cada grano cuenta una historia y cada taza despierta una alegria</p>
+            <div class="btns">
+                <a href="menu.html" class="btn-orange">Ordenar ahora</a>
+                <a href="contacto.html" class="btn-orange">Contactenos</a>
             </div>
         </div>
-
-        <div class="image-container">
-            <img src="/img/coffee-hero-section.png" alt="Taza de café con granos volando">
+        <div class="hero-right">
+            <img src="./img/coffee-hero-section.png" alt="Taza de cafe">
         </div>
-    </main>
-
+    </section>
 </body>
 </html>
