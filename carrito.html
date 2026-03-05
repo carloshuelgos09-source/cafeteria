@@ -2,72 +2,82 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe - Contactenos</title>
-    <link rel="stylesheet" href="./css/stile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Carrito - Coffee Shop</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c08c5c0912.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/stile.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">☕ Coffe</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html" class="active" style="border-bottom: 2px solid #e79c2a; padding-bottom: 5px;">Contactenos</a></li>
-                <li><a href="carrito.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li><a href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="nav">
+    <div class="logo">☕ Coffe</div>
 
-    <main class="menu-container">
-        <div class="menu-header">
-            <h2>CONTACTENOS</h2>
-            <div class="underline"></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html" class="bold">Contactenos</a>
+        <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+    </div>
+</nav>
+
+<section class="carrito">
+
+    <div class="carrito-container">
+
+        <div class="carrito-left">
+            <h2><i class="fa-solid fa-cart-shopping"></i> Tu carrito</h2>
+            <p class="sub">Revisa los productos seleccionados</p>
+
+            <div class="empty-cart">
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h3>Tu carrito está vacío</h3>
+                <p>Agrega productos desde el menú para comenzar.</p>
+                <button class="btn-dark"><i class="fa-solid fa-magnifying-glass"></i> Explorar Productos</button>
+            </div>
         </div>
 
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <div class="contact-info-item">
-                    <i class="fa-solid fa-map"></i> <span>123 Camsite avenue, wil, CA 51425</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fa-solid fa-envelope"></i> <span>info@coffeshopwebsite.com</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fa-solid fa-phone"></i> <span>(123) 4434-4221</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fa-regular fa-clock"></i> <span>Monday - friday : 9:00 AM 5:00 PM</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fa-regular fa-clock"></i> <span>Saturday : 10:00 AM 3:00 PM</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fa-regular fa-clock"></i> <span>Sunday : closed</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fa-solid fa-globe"></i> <span>www.coffeshopweb.com</span>
-                </div>
+        <div class="carrito-right">
+            <h3><i class="fa-solid fa-box-open"></i>Resumen del Pedido</h3>
+
+            <div class="resumen">
+                <p>Subtotal <span class="info-resumen">$0</span></p>
+                <p>Envío <span class="info-resumen">Gratis</span></p>
+                <p class="total">Total <span class="info-resumen">$0</span></p>
             </div>
 
-            <form class="contact-form">
-                <input type="text" placeholder="YOUR NAME">
-                <input type="email" placeholder="YOUR GMAIL">
-                <textarea placeholder="YOUR MESSAGE"></textarea>
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
+            <h3><i class="fa-solid fa-location-dot"></i> Informacion del pedido</h3>
+
+            <input type="text" placeholder="Dirección completa">
+
+            <div class="row">
+                <input type="text" placeholder="Ciudad">
+                <input type="text" placeholder="Código Postal">
+            </div>
+
+            <input type="text" placeholder="Método de pago">
+
+            <button class="shop-btn"><i class="fa-regular fa-circle-check"></i> Finalizar compra</button>
+
+            <div class="info-extra">
+                <p><i class="fa-solid fa-shield-heart"></i> Compra segura y protegida</p>
+                <p><i class="fa-solid fa-box-archive"></i> Envío gratis en compras >$100.000</p>
+                <p><i class="fa-solid fa-user"></i> Atención al cliente 24/7</p>
+            </div>
+
         </div>
 
-        <div class="footer-logo">
-            El mejor café ☕
-        </div>
-    </main>
+    </div>
+
+</section>
 
 </body>
 </html>
