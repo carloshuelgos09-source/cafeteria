@@ -14,7 +14,7 @@ body{
     to{ opacity:1; }
 }
 
-.nav{
+.navbar-container{
     background-color: #3b141c;
     display:flex;
     justify-content:space-between;
@@ -22,7 +22,7 @@ body{
     padding:16px 40px;
 }
 
-.nav a{
+.navbar-container a{
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: bold;
     color:white;
@@ -31,20 +31,20 @@ body{
     transition: all 0.3s ease;
 }
 
-.nav a:hover{
+.navbar-container a:hover{
     color: #f3961c;
 }
 
-.nav .bold{
+.navbar-container .fw-bold{
     font-weight:bold;
 }
 
-.logo{
+.brand-logo{
     color:white;
     font-size:20px;
 }
 
-.hero{
+.main-banner{
     background: #3b141c;
     min-height:100vh;
     display:flex;
@@ -52,7 +52,7 @@ body{
     padding:0 60px;
 }
 
-.hero-left{
+.banner-content{
     width:60%;
     color:white;
     text-align: center;
@@ -60,32 +60,32 @@ body{
     justify-content: center;
 }
 
-.hero-left h1{
+.banner-content h1{
     color: #f3961c;
     font-size: 6rem;
     margin-bottom: 60px;
 }
 
-.hero-left h3{
+.banner-content h3{
     font-family: 'Comfortaa', cursive;
     font-size: 2rem;
     margin-bottom: 80px;
     font-weight: lighter;
 }
 
-.hero-left p{
+.banner-content p{
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
 }
 
-.btns{
+.action-buttons{
     display: flex;
     gap: 150px;
     margin-top: 70px;
     justify-content: center;
 }
 
-.btns a{
+.action-buttons a{
     font-family: 'Archivo Narrow', sans-serif;
     background-color: #f3961c;
     color:white;
@@ -99,35 +99,33 @@ body{
     transition: all 0.3s ease;
 }
 
-
-.btns a:hover{
+.action-buttons a:hover{
     background-color: #be730f;
 }
 
-.hero-right{
+.banner-image{
     width:40%;
 }
 
-.hero-right img{
+.banner-image img{
     width: 111%;
 }
 
-/* MENU */
-.menu{
+.product-menu{
     font-family: 'Archivo Narrow', sans-serif;
     padding: 60px;
     text-align:center;
     background:white;
 }
 
-.menu h2{
+.product-menu h2{
     color: #3b141c;
     font-size: 30px;
     margin-bottom:3px;
     font-weight: bold;
 }
 
-.line{
+.section-divider{
     width: 120px;
     height:4px;
     background-color: #f3961c;
@@ -135,13 +133,13 @@ body{
     border-radius:5px;
 }
 
-.menu-grid{
+.items-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap: 120px;
 }
 
-.card{
+.item-card{
     font-family: 'Archivo Narrow', sans-serif;
     width: 320px;
     height: 320px;
@@ -153,10 +151,9 @@ body{
     flex-direction:column;
     justify-content:space-between;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 1px 4px;
-
 }
 
-.card img{
+.item-card img{
     width:100%;
     height:120px;
     object-fit:contain;
@@ -164,19 +161,18 @@ body{
     margin-bottom:15px;
 }
 
-.card p{
-
+.item-card p{
     font-size:14px;
     margin:10px 0;
 }
 
-.card-btns{
+.card-actions{
     display:flex;
     gap: 10px;
     justify-content:center;
 }
 
-.card-btns button{
+.card-actions button{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 10px;
     font-weight: bold;
@@ -184,11 +180,11 @@ body{
     transition: all 0.3s ease;
 }
 
-.card-btns button:hover{
+.card-actions button:hover{
     background-color: #be730f;
 }
 
-.btn{
+.primary-button{
     font-family: 'Archivo Narrow', sans-serif;
     background-color: #f3961c;
     color:white;
@@ -201,18 +197,17 @@ body{
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.primary-button:hover{
     background-color: #be730f;
 }
 
-/* GALERIA */
-.galeria{
+.photo-gallery{
     padding:60px;
     text-align:center;
     background:white;
 }
 
-.galeria h2{
+.photo-gallery h2{
     font-family: 'Archivo Narrow', sans-serif;
     color: #3b141c;
     margin-bottom:3px;
@@ -220,19 +215,19 @@ body{
     font-size: 30px;
 }
 
-.galeria-grid{
+.gallery-layout{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
 
-.img-box{
+.image-wrapper{
     overflow:hidden;
     border-radius:14px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 1px 4px;
 }
 
-.img-box img{
+.image-wrapper img{
     display: block;
     width: 100%;
     height:220px;
@@ -241,44 +236,43 @@ body{
     transition:0.3s;
 }
 
-.img-box:hover img{
+.image-wrapper:hover img{
     transform:scale(1.05);
 }
 
-/* CONTACTO */
-.contacto{
+.contact-section{
     font-family: 'Archivo Narrow', sans-serif;
     padding:80px 100px;
     background:white;
     text-align:center;
 }
 
-.contacto h2{
+.contact-section h2{
     color: #3b141c;
     font-size: 20px;
     margin-bottom:3px;
     font-weight: bold;
 }
 
-.contacto-container{
+.contact-wrapper{
     display:flex;
     gap:60px;
     align-items:flex-start;
 }
 
-.contact-left{
+.contact-details{
     flex:1;
     display:flex;
     flex-direction:column;
 }
 
-.contact-brand{
+.brand-text{
     margin-top:25px;
     font-size:26px;
     color: #f3961c;
 }
 
-.contact-info{
+.info-box{
     flex:1;
     background:white;
     padding:40px;
@@ -286,12 +280,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 1px 4px;
 }
 
-.contact-info p{
+.info-box p{
     margin-bottom:14px;
     color: #252525;
 }
 
-.contact-brand{
+.brand-text{
     font-family: "miniver", sans-serif;
     margin-top:30px;
     font-size:26px;
@@ -299,15 +293,15 @@ body{
     text-shadow: 0 4px 1px rgba(0, 0, 0, 0.15);
 }
 
-.contact-form{
+.form-wrapper{
     flex:1;
     display:flex;
     flex-direction:column;
     gap:18px;
 }
 
-.contact-form input,
-.contact-form textarea{
+.form-wrapper input,
+.form-wrapper textarea{
     padding:14px;
     border-radius:12px;
     border:1px solid #cccccc;
@@ -315,12 +309,12 @@ body{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-.contact-form textarea{
+.form-wrapper textarea{
     height:140px;
     resize:none;
 }
 
-.btn-dark{
+.dark-button{
     font-family: 'Archivo Narrow', sans-serif;
     width: 160px;
     background-color: #3b141c;
@@ -334,36 +328,35 @@ body{
     transition: all 0.3s ease;
 }
 
-.btn-dark:hover{
+.dark-button:hover{
     background-color: #18080b;
 }
 
-/* CARRITO */
-.carrito{
+.shopping-cart{
     font-family: 'Archivo Narrow', sans-serif;
     padding:30px 100px;
     background:white;
 }
 
-.carrito-container{
+.cart-wrapper{
     display:flex;
     gap:60px;
 }
 
-.carrito-left{
+.cart-details{
     flex:2;
 }
 
-.carrito-left h2{
+.cart-details h2{
     text-align: center;
 }
 
-.sub{
+.subtitle-text{
     margin-bottom:25px;
     text-align: center;
 }
 
-.empty-cart{
+.no-items-box{
     background:white;;
     padding:50px;
     border-radius:20px;
@@ -371,22 +364,22 @@ body{
     text-align:center;
 }
 
-.empty-cart .icon{
+.no-items-box .large-icon{
     font-size:90px;
     margin-bottom:20px;
     color: #cccccc;
 }
 
-.empty-cart h3{
+.no-items-box h3{
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.empty-cart p{
+.no-items-box p{
     margin-bottom: 20px;
 }
 
-.carrito-right{
+.cart-summary{
     flex:1;
     background:white;
     padding:35px;
@@ -397,18 +390,18 @@ body{
     gap:18px;
 }
 
-.resumen p{
+.order-summary p{
     display:flex;
     justify-content:space-between;
     color: #cccccc;
     font-weight: bold;
 }
 
-.info-resumen{
+.summary-value{
     color: rgb(0, 209, 0);
 }
 
-.total{
+.total-amount{
     font-weight:bold;
     font-size:20px;
     border: 2px solid #cccccc;
@@ -417,19 +410,19 @@ body{
     margin:5px 0;
 }
 
-.row{
+.flex-row{
     display:flex;
     gap:12px;
 }
 
-.carrito-right input{
+.cart-summary input{
     padding:12px;
     border-radius:10px;
     border: 2px solid #cccccc;
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-.carrito-right .shop-btn{
+.cart-summary .checkout-button{
     width:100%;
     color: white;
     background-color: #f3961c;
@@ -442,24 +435,23 @@ body{
     transition: all 0.3s ease;
 }
 
-.carrito-right .shop-btn:hover{
+.cart-summary .checkout-button:hover{
     background-color: #be730f;
 }
 
-.info-extra{
+.additional-info{
     margin-top:15px;
     font-size:14px;
     color: #000000;
 }
 
-/* AUTH GENERAL */
-.auth{
+.authentication-section{
     display:flex;
     min-height:100vh;
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-.auth-left{
+.auth-form-side{
     flex:1;
     display:flex;
     justify-content:center;
@@ -467,17 +459,17 @@ body{
     background-color: #ffffff;
 }
 
-.auth-right{
+.auth-image-side{
     flex:1;
 }
 
-.auth-right img{
+.auth-image-side img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
-.auth-card{
+.auth-box{
     background:white;
     padding:50px;
     border-radius:20px;
@@ -489,11 +481,11 @@ body{
     text-align:center;
 }
 
-.auth-icon{
+.user-icon{
     font-size:40px;
 }
 
-.auth-card input:not([type="checkbox"]){
+.auth-box input:not([type="checkbox"]){
     padding:12px;
     border-radius:10px;
     border:1px solid #252525;
@@ -501,22 +493,22 @@ body{
     width: 100%;
 }
 
-.auth-row{
+.auth-options{
     display:flex;
     justify-content:space-between;
     font-size:14px;
 }
 
-.link{
+.text-link{
     color: #1c80f3;
     text-decoration:none;
 }
 
-.full{
+.w-100{
     width:100%;
 }
 
-.divider{
+.separator-line{
     display:flex;
     align-items:center;
     text-align:center;
@@ -526,28 +518,28 @@ body{
     font-weight: bold;
 }
 
-.divider::before,
-.divider::after{
+.separator-line::before,
+.separator-line::after{
     content:"";
     flex:1;
     height:1px;
     background: #252525;
 }
 
-.divider::before{
+.separator-line::before{
     margin-right:10px;
 }
 
-.divider::after{
+.separator-line::after{
     margin-left:10px;
 }
 
-.social{
+.social-login{
     display:flex;
     gap:10px;
 }
 
-.social-btn{
+.social-button{
     flex:1;
     padding:10px;
     border-radius:8px;
@@ -557,31 +549,123 @@ body{
     transition: all 0.3s ease;
 }
 
-.social-btn:hover{
+.social-button:hover{
     background-color: #3b141c;
     color: white;
 }
 
-.bottom-text{
+.footer-text{
     font-size:14px;
     font-weight: bold;
 }
 
-.bottom-text2{
+.security-text{
     font-size: 10px;
     font-weight: bold;
 }
 
-.grid-2{
+.two-columns{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:12px;
 }
 
-.terms{
+.terms-text{
     font-size: 12px;
 }
 
-.terms span{
+.terms-text span{
     color: #1c4ef3;
+}
+
+
+
+@media (max-width: 1024px) {
+    .items-grid {
+        gap: 40px;
+        justify-items: center;
+    }
+    
+    .banner-content h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar-container a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .main-banner {
+        flex-direction: column;
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .banner-content, .banner-image {
+        width: 100%;
+    }
+
+    .banner-image img {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .action-buttons {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items-grid, .gallery-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contact-wrapper, .cart-wrapper, .authentication-section {
+        flex-direction: column;
+    }
+
+    .auth-image-side {
+        display: none;
+    }
+
+    .item-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .items-grid, .gallery-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+
+    .banner-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-section, .shopping-cart, .product-menu, .photo-gallery {
+        padding: 40px 20px;
+    }
+
+    .auth-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
 }
